@@ -2,12 +2,17 @@ Ejercicio #4
 
 Algoritmo PersonasMayorEdad
 	R <- 0
+	p <- 150
 	Para i<-1 Hasta 20 Hacer
 		Escribir 'Ingrese las edades'
 		Leer Edad
 		Si Edad>R Entonces
 			R <- Edad
 		FinSi
+		Si Edad<p Entonces
+			p <- Edad
+		FinSi
 	FinPara
 	Escribir 'La persona de mayor edad es: ',R
+	Escribir 'La persona de menor edad es: ',p
 FinAlgoritmo
